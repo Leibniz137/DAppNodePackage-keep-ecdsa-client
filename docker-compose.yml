@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  keep-ecdsa-client.public.dappnode.eth:
+    build: ./build
+    environment:
+      - 'HTTP_RPC_URL=http://fullnode.dappnode:8545/'
+      - KEEP_ETHEREUM_PASSWORD
+      - LOG_LEVEL=debug
+      - PEERS="/dns4/bst-a01.ecdsa.keep.boar.network/tcp/4001/ipfs/16Uiu2HAkzYFHsqbwt64ZztWWK1hyeLntRNqWMYFiZjaKu1PZgikN,/dns4/bst-b01.ecdsa.keep.boar.network/tcp/4001/ipfs/16Uiu2HAkxLttmh3G8LYzAy1V1g1b3kdukzYskjpvv5DihY4wvx7D"
+      - 'WS_RPC_URL=ws://fullnode.dappnode:8546/'
+    image: 'keep-ecdsa-client.public.dappnode.eth:0.1.2'
+    restart: always
+    ports:
+      - '3920:3920'
+    volumes:
+      - 'persistence:/mnt/persistence'
+      - 'keystore:/mnt/keystore'
+volumes:
+  persistence: {}
+  keystore: {}
