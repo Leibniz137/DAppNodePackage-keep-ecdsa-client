@@ -1,0 +1,14 @@
+{
+  "name": "keep-ecdsa-client.public.dappnode.eth",
+  "version": "0.1.2",
+  "description": "Run a Keep ECDSA Client",
+  "type": "service",
+  "author": "thenateway",
+  "categories": [
+    "Developer tools"
+  ],
+  "links": {
+    "homepage": "https://github.com/Leibniz137/DAppNodePackage-keep-ecdsa-client"
+  },
+  "license": "GLP-3.0"
+}
