@@ -3,6 +3,7 @@ services:
   keep-ecdsa-client.public.dappnode.eth:
     build: ./build
     environment:
+      - ANNOUNCED_ADDRESSES
       - 'HTTP_RPC_URL=http://fullnode.dappnode:8545/'
       - KEEP_ETHEREUM_PASSWORD
       - LOG_LEVEL=debug
