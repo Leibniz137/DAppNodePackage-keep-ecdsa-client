@@ -7,9 +7,9 @@ see:
 
 # Install
 Access this link using your dappnode wifi:
-http://my.dappnode/#/installer/%2Fipfs%2FQmWh5o98xojFQyw785TsBUnNfCEA3eU9xQtadcy5mDAb94
+http://my.dappnode/#/installer/%2Fipfs%2FQmYesbLMNBXBF2pvCQDNgifYFyezERraozQDuiV1HXPUEf
 
-current ipfs hash `QmWh5o98xojFQyw785TsBUnNfCEA3eU9xQtadcy5mDAb94`
+current ipfs hash `QmYesbLMNBXBF2pvCQDNgifYFyezERraozQDuiV1HXPUEf`
 
 ## Quick Start
 1. Set `KEEP_ETHEREUM_PASSWORD` and `ANNOUNCED_ADDRESSES` environment variables in the Config section of the package.
