@@ -1,5 +1,5 @@
 # Keep ECDSA Dappnode Package
-This dappnode package will allow you to participate in the keep ropsten testnet.
+This dappnode package will allow you to participate keep-network as a tBTC operator.
 
 see:
 - https://keep.network/
