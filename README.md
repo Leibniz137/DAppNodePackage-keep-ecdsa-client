@@ -27,19 +27,22 @@ If announcing multiple addresses, the address should be listed as a comma-delimi
 ```
 
 2. Copy operator address from package logs
-3. GOTO https://dashboard.test.keep.network/
+3. GOTO https://dashboard.keep.network/
 4. Delegate your keep tokens to the operator address
-5. Authorize all 3 contracts (random beacon, ecdsa, tBTC)
-6. Send the operator address some eth (0.001 eth is fine)
+5. Authorize the 2 application contracts (BondedECDSAKeepFactory, TBTCSystem)
+6. Send the operator address some eth
+  - ~0.5 eth is fine to start with, but be sure to monitor the balance!
 
 
-# Risk
+# Risks
 see:
 - https://hackmd.io/@protocollayer/BkUBl7zIw
 
 
 ## Collateralization
-
+Eth is bonded at a 150% collateralization ratio initially. This ratio cannot
+be adjusted, and if it falls below 125%, you must close the deposit by market
+buying tBTC.
 
 
 ## Downtime / Unavaliability
@@ -54,7 +57,7 @@ The secret material is stored in to file path's on your Keep ECDSA Client Node:
 - `/mnt/persistence/`
 
 
-## Extracting your operator account
+### Extracting your operator account
 The operator account is generated automatically for you when this package is initialized.
 The operator account (ie private key) is stored in the data volume for this package,
 so if you delete the dnp completely, including data, then you will lose your operator account.
@@ -65,4 +68,4 @@ The (encrypted) account is written to `/mnt/keystore/keep_wallet.json`.
 To save this file, simply browse to the `File Manager` section of the DNP package and enter
 this path into the `DOWNLOAD FILE FROM PACKAGE` input.
 
-## Extracting you signing material
+### Extracting you signing material
