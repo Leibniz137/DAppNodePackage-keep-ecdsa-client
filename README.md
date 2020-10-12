@@ -4,6 +4,7 @@ This dappnode package will allow you to participate keep-network as a tBTC opera
 see:
 - https://keep.network/
 - https://discordapp.com/invite/wYezN7v (see 🥩Staking channels)
+- https://keep-network.gitbook.io/staking-documentation/
 
 # Install
 Access this link using your dappnode wifi:
@@ -37,9 +38,10 @@ If announcing multiple addresses, the address should be listed as a comma-delimi
 # Risks
 see:
 - https://hackmd.io/@protocollayer/BkUBl7zIw
+- https://keep-network.gitbook.io/staking-documentation/about-staking/slashing#tbtc-slashing-vectors
 
 
-## Collateralization
+## Under-Collateralization / Liquidation
 Eth is bonded at a 150% collateralization ratio initially. This ratio cannot
 be adjusted, and if it falls below 125%, you must close the deposit by market
 buying tBTC.
