@@ -46,7 +46,7 @@ Use a more secure account for the Authorizer and Beneficiary addresses.
 Remember to Authorize the tBTC contracts after delegating!
 
 # Risks
-The primary risks in running a random beacon are downtime and loss of persistent data.
+The primary risks in running a random beacon are undercollateralization, downtime, and loss of persistent data.
 
 Educate yourself on the risks before attempting to operate a ecdsa client!
 
@@ -63,7 +63,7 @@ buying tBTC.
 
 
 ## Downtime / Unavaliability
-> This means that if you are part of an active signing group, your node should never be down for more than two hours, since your group could be requested to redeem a deposit at any point.
+If you are part of an active signing group, your node should never be down for more than two hours, since your group could be requested to redeem a deposit at any point.
 
 
 ## Backups
