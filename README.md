@@ -36,9 +36,14 @@ If announcing multiple addresses, the address should be listed as a comma-delimi
 
 
 # Risks
+The primary risks in running a random beacon are downtime and loss of persistent data.
+
+Educate yourself on the risks before attempting to operate a ecdsa client!
+
 see:
 - https://hackmd.io/@protocollayer/BkUBl7zIw
 - https://keep-network.gitbook.io/staking-documentation/about-staking/slashing#tbtc-slashing-vectors
+- https://github.com/keep-network/keep-core/blob/master/docs/status-reports/tbtc-2020-09-15-to-2020-10-13.adoc
 
 
 ## Under-Collateralization / Liquidation
@@ -52,7 +57,7 @@ buying tBTC.
 
 
 ## Backups
-Losing your node's secret material is
+Losing your node's secret material can cause loss of funds, including the BTC in the keeps you are participating in!
 
 The secret material is stored in to file path's on your Keep ECDSA Client Node:
 - `/mnt/keystore/keep_wallet.json`
@@ -70,4 +75,14 @@ The (encrypted) account is written to `/mnt/keystore/keep_wallet.json`.
 To save this file, simply browse to the `File Manager` section of the DNP package and enter
 this path into the `DOWNLOAD FILE FROM PACKAGE` input.
 
-### Extracting you signing material
+### Extracting your signing material
+The secret material corresponding to your share of keeps you are a member of is stored in `/mnt/persistence/`
+
+This directory should be backed up every time you enter into a new keep.
+Failure to properly back up this secret material can lead to BTC being permanently stuck in the keep,
+and the loss of your bond.
+
+[Don't be like this operator!](https://github.com/keep-network/keep-core/blob/master/docs/status-reports/tbtc-2020-09-15-to-2020-10-13.adoc#missing-signer-backups)
+
+To save this directory, simply browse to the `File Manager` section of the DNP package and enter
+this path into the `DOWNLOAD FILE FROM PACKAGE` input.
