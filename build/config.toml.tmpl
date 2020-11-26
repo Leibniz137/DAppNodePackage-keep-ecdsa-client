@@ -43,3 +43,10 @@ AnnouncedAddresses = [
 # This is an optional parameter, if not provided timeout for TSS protocol
 # pre-parameters generation will be set to `2 minutes`.
 PreParamsGenerationTimeout = "2m30s"
+
+# This extension takes care of
+# executing actions that are assumed by tBTC to be the signer's responsibility,
+# for example, retrieve public key from keep to tBTC deposit or
+# increase redemption fee on tBTC deposit.
+# [Extensions.TBTC]
+TBTCSystem = "0xe20A5C79b39bC8C363f0f49ADcFa82C2a01ab64a"
