@@ -11,9 +11,9 @@ This package requires a public, static ip address.
 
 # Install
 Access this link using your dappnode wifi/vpn:
-http://my.dappnode/#/installer/%2Fipfs%2FQmS3bUnbaDCFgmTnAatjrh1HPtU3zeV6oLjUT5zuDD2kLm
+http://my.dappnode/#/installer/%2Fipfs%2FQmRaoiexSVjApViTxusXniAjtJLRxQt5HM4XqqoCjYe3vx
 
-current ipfs hash `QmS3bUnbaDCFgmTnAatjrh1HPtU3zeV6oLjUT5zuDD2kLm`
+current ipfs hash `QmRaoiexSVjApViTxusXniAjtJLRxQt5HM4XqqoCjYe3vx`
 
 ## Quick Start
 1. Set `KEEP_ETHEREUM_PASSWORD` and `ANNOUNCED_ADDRESSES` environment variables in the Config section of the package.
