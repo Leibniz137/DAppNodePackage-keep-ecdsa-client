@@ -1,7 +1,7 @@
 {
   "name": "keep-ecdsa-client.public.dappnode.eth",
-  "version": "0.4.0",
-  "upstreamVersion": "v1.6.0",
+  "version": "0.5.0",
+  "upstreamVersion": "v1.7.1",
   "description": "Run a Keep ECDSA Client",
   "type": "service",
   "author": "thenateway",
