@@ -17,7 +17,7 @@ RUN go get github.com/ethereum/go-ethereum/ethclient@v1.10.1 \
 COPY ./config.toml.tmpl $APPDIR
 COPY ./entrypoint.sh $APPDIR
 
-FROM keepnetwork/keep-ecdsa-client:v1.7.2
+FROM keepnetwork/keep-ecdsa-client:v1.8.1
 
 
 ENV APPDIR /usr/src/app/
